@@ -1,0 +1,27 @@
+[package]
+authors = ["Mike Pedersen <mike@mikepedersen.dk>"]
+edition = "2018"
+name = "sketch-duplicates"
+description = "Find duplicate lines probabilistically"
+readme = "README.md"
+categories = ["command-line-utilities"]
+repository = "https://github.com/mpdn/sketch-duplicates"
+version = "0.1.0"
+license = "MIT"
+
+[[bench]]
+harness = false
+name = "bench"
+
+[dependencies]
+anyhow = "1.0.31"
+byteorder = "1.3.4"
+human-size = "0.4.1"
+metrohash = "1.0.6"
+structopt = "0.3.15"
+
+[dev-dependencies]
+criterion = "0.3.3"
+proptest = "0.10.0"
+rand = "0.7.3"
+rand_chacha = "0.2.2"
